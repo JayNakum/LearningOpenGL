@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yarn">
+      <UniqueIdentifier>{FF888F7C-EBBF-900D-94AC-761080C20C0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yarn\Events">
+      <UniqueIdentifier>{0340CFFF-6FF5-47F5-F8E9-41CC649E3EF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yarn\ImGui">
+      <UniqueIdentifier>{6981607C-5539-A2C9-BE40-7B25AA173DBA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn.h" />
+    <ClInclude Include="src\Yarn\Application.h">
+      <Filter>Yarn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Core.h">
+      <Filter>Yarn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\EntryPoint.h">
+      <Filter>Yarn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Events\ApplicationEvent.h">
+      <Filter>Yarn\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Events\Event.h">
+      <Filter>Yarn\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Events\KeyEvent.h">
+      <Filter>Yarn\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Events\MouseEvent.h">
+      <Filter>Yarn\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\ImGui\ImGuiLayer.h">
+      <Filter>Yarn\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Layer.h">
+      <Filter>Yarn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\LayerStack.h">
+      <Filter>Yarn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Log.h">
+      <Filter>Yarn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Yarn\Window.h">
+      <Filter>Yarn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\YarnPCH.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Yarn\Application.cpp">
+      <Filter>Yarn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Yarn\ImGui\ImGuiLayer.cpp">
+      <Filter>Yarn\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Yarn\Layer.cpp">
+      <Filter>Yarn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Yarn\LayerStack.cpp">
+      <Filter>Yarn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Yarn\Log.cpp">
+      <Filter>Yarn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\YarnPCH.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+﻿  Geometry.cpp
+  main.cpp
+  shaders.cpp
+  Transform.cpp
+D:\ComputerGraphics\UCSD\hw1-windows\hw1-windows\Transform.cpp(9,37): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\ComputerGraphics\UCSD\hw1-windows\hw1-windows\Transform.cpp(9,22): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  grader.cpp
+  Generating Code...
+  hw1-windows.vcxproj -> D:\ComputerGraphics\UCSD\hw1-windows\Debug\hw1-windows.exe

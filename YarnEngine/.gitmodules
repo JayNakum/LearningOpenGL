@@ -1,0 +1,9 @@
+[submodule "Yarn2D/vendor/spdlog"]
+	path = Yarn2D/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "Yarn2D/vendor/GLFW"]
+	path = Yarn2D/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "Yarn2D/vendor/imgui"]
+	path = Yarn2D/vendor/imgui
+	url = https://github.com/TheCherno/imgui

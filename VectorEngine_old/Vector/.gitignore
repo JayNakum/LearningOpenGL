@@ -1,0 +1,13 @@
+# Visual Studio Files
+*.user
+.vs/
+
+# Binaries
+bin/
+bin-int/
+
+# Static and Dynamic Libraries
+lib/*
+
+# External libraries
+vendors/*

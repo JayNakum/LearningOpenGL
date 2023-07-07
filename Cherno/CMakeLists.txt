@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.5)
+project(OpenGL)
+
+find_package(glfw3 3.3 REQUIRED)
+
+set(OpenGL_GL_PREFERENCE GLVND)
+find_package(OpenGL REQUIRED)
+
+find_package(GLEW REQUIRED)
+include_directories(${GLEW_INCLUDE_DIRS})
+link_libraries(${GLEW_LIBRARIES})
+
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++17")
+set (source_dir "${PROJECT_SOURCE_DIR}/src/")
+file (GLOB source_files "${source_dir}/*.cpp")
+file(GLOB imgui "${source_dir}/vendors/imgui/*.cpp")
+file(GLOB stb_image "${source_dir}/vendors/stb_image/*.cpp")
+include(CTest)
+enable_testing()
+add_executable(OpenGL ${source_files} ${stb_image} ${imgui})
+target_link_libraries(OpenGL glfw GLEW::GLEW ${OPENGL_LIBRARIES})
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
